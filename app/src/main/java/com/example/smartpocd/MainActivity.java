@@ -17,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
     private StorageReference storageReference;
     // declare image process button
     private Button imageProcButton;
+    // declare diagnostics report button
+    private Button DiagnosticsReportButton;
+    // declare sampling tutorial button
+    private Button SampleTutorial;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent switchToImProcIntent = new Intent(MainActivity.this, ImageProcessActivity.class);
                 startActivity(switchToImProcIntent);
+            }
+        });
+
+        DiagnosticsReportButton = (Button) findViewById(R.id.diagnostics_reports_button);
+        DiagnosticsReportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(MainActivity.this,Diagnostics_Report.class);
+                startActivity(intent);
             }
         });
 

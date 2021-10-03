@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPOCD">
         <activity
+            android:name=".sampling_tutorial"
+            android:exported="true" />
+        <activity
+            android:name=".Diagnostics_Report"
+            android:exported="true" />
+        <activity
             android:name=".ImageProcessActivity"
             android:exported="true" />
         <activity
