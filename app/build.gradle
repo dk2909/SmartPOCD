@@ -28,6 +28,10 @@ android {
     }
 }
 
+ext {
+    supportLibVersion = '23.1.1'
+}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.3.1'
@@ -37,4 +41,12 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // adding for camera implementation
+    implementation 'androidx.annotation:annotation:1.1.0' // to resolve nonnull error
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+    implementation "com.android.support:design:${supportLibVersion}"
+    implementation "com.android.support:palette-v7:${supportLibVersion}"
+    implementation "com.android.support:customtabs:${supportLibVersion}"
+    implementation "com.android.support:gridlayout-v7:${supportLibVersion}"
+    implementation "androidx.core:core-ktx:+"
 }
