@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button imageProcButton;
     // declare diagnostics report button
     private Button DiagnosticsReportButton;
-    // declare sampling tutorial button
-    private Button SampleTutorial;
+
 
 
 
@@ -48,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
         // get handle on server storage
         // storage = FirebaseStorage.getInstance();
